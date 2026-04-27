@@ -154,7 +154,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/circularfactory/Core#hasInputEntityType
 :hasInputEntityType rdf:type owl:ObjectProperty ;
                     rdfs:domain :TaskType ;
-                    rdfs:range :EntitiyType ;
+                    rdfs:range :EntityType ;
                     rdfs:label "has input entity type" .
 
 
@@ -209,7 +209,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/circularfactory/Core#hasOutputEntityType
 :hasOutputEntityType rdf:type owl:ObjectProperty ;
                      rdfs:domain :TaskType ;
-                     rdfs:range :EntitiyType ;
+                     rdfs:range :EntityType ;
                      rdfs:label "has output entity type" .
 
 
@@ -391,7 +391,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/circularfactory/Core#AssemblyType
 :AssemblyType rdf:type owl:Class ;
-              rdfs:subClassOf :EntitiyType ;
+              rdfs:subClassOf :EntityType ;
               owl:disjointWith :ComponentType ;
               rdfs:comment "A classification that defines the structure and composition of an assembly independent of individual instances"@en ;
               rdfs:label "Assembly Type" .
@@ -446,7 +446,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/circularfactory/Core#ComponentType
 :ComponentType rdf:type owl:Class ;
-               rdfs:subClassOf :EntitiyType ;
+               rdfs:subClassOf :EntityType ;
                rdfs:comment "A classification that defines the design or specification of a component independent of individual instances"@en ;
                rdfs:label "Component Type" .
 
@@ -480,11 +480,6 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:subClassOf :ProductionProcess ;
                   rdfs:comment "A production process where the amount of input-workpieces is smaller than amount of output-workpieces  "@en ;
                   rdfs:label "Diverging Process" .
-
-
-###  https://w3id.org/circularfactory/Core#EntitiyType
-:EntitiyType rdf:type owl:Class ;
-             rdfs:label "Entitiy Type" .
 
 
 ###  https://w3id.org/circularfactory/Core#EntityType
@@ -583,12 +578,6 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "Possession State" .
 
 
-###  https://w3id.org/circularfactory/Core#PrductGeneration
-:PrductGeneration rdf:type owl:Class ;
-                  rdfs:comment "TBD"@en ;
-                  rdfs:label "Prduct Generation" .
-
-
 ###  https://w3id.org/circularfactory/Core#Process
 :Process rdf:type owl:Class ;
          rdfs:comment "A process is an action that changes either the product or the production system state."@en ;
@@ -608,6 +597,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/circularfactory/Core#ProductGeneration
 :ProductGeneration rdf:type owl:Class ;
+                   rdfs:comment "TBD"@en ;
                    rdfs:label "Product Generation" .
 
 
@@ -721,13 +711,15 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://orcid.org/0000-0002-3704-9567
 <https://orcid.org/0000-0002-3704-9567> rdf:type owl:NamedIndividual ,
                                                  <http://xmlns.com/foaf/0.1/Person> ;
-                                        <http://xmlns.com/foaf/0.1/name> "Jan-Felix Klein" .
+                                        <http://xmlns.com/foaf/0.1/name> "Jan-Felix Klein" ;
+                                        rdfs:label "Jan-Felix Klein" .
 
 
 ###  https://orcid.org/0009-0008-1170-4122
 <https://orcid.org/0009-0008-1170-4122> rdf:type owl:NamedIndividual ,
                                                  <http://xmlns.com/foaf/0.1/Person> ;
-                                        <http://xmlns.com/foaf/0.1/name> "Finn Bail" .
+                                        <http://xmlns.com/foaf/0.1/name> "Finn Bail" ;
+                                        rdfs:label "Finn Bail" .
 
 
 #################################################################
@@ -735,6 +727,9 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 rdfs:comment rdfs:label "comment" .
+
+
+rdfs:label rdfs:label "label" .
 
 
 #################################################################

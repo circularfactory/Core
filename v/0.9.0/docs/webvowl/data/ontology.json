@@ -85,82 +85,79 @@
     "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
     "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "33",
-    "type" : "owl:Class"
-  }, {
-    "id" : "35",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "37",
-    "type" : "owl:Class"
-  }, {
-    "id" : "42",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "26",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "50",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "14",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "51",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "34",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "59",
-    "type" : "owl:Class"
-  }, {
-    "id" : "60",
-    "type" : "owl:Class"
-  }, {
-    "id" : "65",
+    "id" : "15",
     "type" : "owl:Class"
   }, {
     "id" : "28",
     "type" : "owl:Class"
   }, {
-    "id" : "38",
+    "id" : "31",
     "type" : "owl:Class"
   }, {
-    "id" : "29",
+    "id" : "33",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
+    "id" : "40",
     "type" : "owl:Class"
   }, {
-    "id" : "57",
-    "type" : "owl:Class"
-  }, {
-    "id" : "54",
-    "type" : "owl:Class"
-  }, {
-    "id" : "58",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
     "id" : "24",
     "type" : "owl:Class"
   }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
     "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "32",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
     "type" : "owl:Class"
   }, {
     "id" : "2",
@@ -169,37 +166,34 @@
     "id" : "91",
     "type" : "owl:Class"
   }, {
-    "id" : "83",
+    "id" : "81",
     "type" : "owl:Class"
   }, {
-    "id" : "19",
-    "type" : "owl:Class"
-  }, {
-    "id" : "41",
+    "id" : "30",
     "type" : "owl:Class"
   }, {
     "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "32",
+    "id" : "37",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
+    "id" : "69",
     "type" : "owl:Class"
   }, {
-    "id" : "104",
+    "id" : "26",
     "type" : "owl:Class"
   }, {
-    "id" : "107",
+    "id" : "48",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
+    "id" : "21",
     "type" : "owl:Class"
   }, {
     "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "19",
     "type" : "owl:Class"
   }, {
     "id" : "71",
@@ -266,7 +260,7 @@
     "comment" : {
       "en" : "A capability that can be equipped with little effort in time or cost."
     },
-    "id" : "1",
+    "id" : "11",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#EquippedCapability",
@@ -279,7 +273,7 @@
     "comment" : {
       "en" : "A capability that is currently available and which is realized through the physical or technical configuration of a resource."
     },
-    "id" : "11",
+    "id" : "15",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#Core",
@@ -289,25 +283,25 @@
       "IRI-based" : "Core",
       "undefined" : "Core"
     },
-    "id" : "30",
-    "superClasses" : [ "23" ]
+    "id" : "28",
+    "superClasses" : [ "21" ]
   }, {
     "instances" : 0,
-    "union" : [ "34", "30" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "33"
+    "union" : [ "32", "28" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "31"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "35",
+    "id" : "33",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "instances" : 0,
-    "union" : [ "38", "39" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "37"
+    "union" : [ "36", "37" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "35"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#PossessionState",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -319,7 +313,7 @@
     "comment" : {
       "en" : "A contextual, time-bound relationship between a resource and a workpiece, often mediated by an operation."
     },
-    "id" : "42"
+    "id" : "40"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#QualityState",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -331,7 +325,7 @@
     "comment" : {
       "en" : "The quality state a workpiece, evaluated at a given time"
     },
-    "id" : "45"
+    "id" : "43"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#CompositeTask",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -343,7 +337,7 @@
     "comment" : {
       "en" : "A task that can be decomposed into multiple subtasks."
     },
-    "id" : "26",
+    "id" : "24",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#Task",
@@ -353,7 +347,7 @@
       "IRI-based" : "Task",
       "undefined" : "Task"
     },
-    "subClasses" : [ "7", "26", "21" ],
+    "subClasses" : [ "7", "24", "19" ],
     "comment" : {
       "en" : "An abstract unit of work that implements a specific process."
     },
@@ -361,7 +355,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "50",
+    "id" : "49",
     "label" : {
       "IRI-based" : "boolean"
     }
@@ -375,15 +369,15 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "51",
+    "id" : "50",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "instances" : 0,
-    "union" : [ "54", "30" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "34"
+    "union" : [ "53", "28" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "32"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#Order",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -395,7 +389,7 @@
     "comment" : {
       "en" : "A specification of requested production activities, defining what products or items should be produced and under which conditions."
     },
-    "id" : "59"
+    "id" : "58"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Person",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -408,30 +402,19 @@
       "iri" : "https://orcid.org/0009-0008-1170-4122",
       "baseIri" : "https://orcid.org",
       "labels" : {
-        "IRI-based" : "0009-0008-1170-4122"
+        "IRI-based" : "0009-0008-1170-4122",
+        "undefined" : "Finn Bail"
       }
     }, {
       "iri" : "https://orcid.org/0000-0002-3704-9567",
       "baseIri" : "https://orcid.org",
       "labels" : {
-        "IRI-based" : "0000-0002-3704-9567"
+        "IRI-based" : "0000-0002-3704-9567",
+        "undefined" : "Jan-Felix Klein"
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "60"
-  }, {
-    "iri" : "https://w3id.org/circularfactory/Core#ChangeabilityCapability",
-    "baseIri" : "https://w3id.org/circularfactory/Core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ChangeabilityCapability",
-      "undefined" : "Changeability Capability"
-    },
-    "comment" : {
-      "en" : "A capability that can be equipped with high effort in time or cost."
-    },
-    "id" : "65",
-    "superClasses" : [ "2" ]
+    "id" : "59"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#ComponentType",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -443,8 +426,21 @@
     "comment" : {
       "en" : "A classification that defines the design or specification of a component independent of individual instances"
     },
-    "id" : "28",
-    "superClasses" : [ "29" ]
+    "id" : "66",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#ChangeabilityCapability",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChangeabilityCapability",
+      "undefined" : "Changeability Capability"
+    },
+    "comment" : {
+      "en" : "A capability that can be equipped with high effort in time or cost."
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#Component",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -456,18 +452,8 @@
     "comment" : {
       "en" : "A workpiece that is indivisible and cannot be further decomposed into components within the given modeling scope."
     },
-    "id" : "38",
-    "superClasses" : [ "41" ]
-  }, {
-    "iri" : "https://w3id.org/circularfactory/Core#EntitiyType",
-    "baseIri" : "https://w3id.org/circularfactory/Core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "EntitiyType",
-      "undefined" : "Entitiy Type"
-    },
-    "subClasses" : [ "32", "28" ],
-    "id" : "29"
+    "id" : "36",
+    "superClasses" : [ "39" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#Process",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -476,11 +462,11 @@
       "IRI-based" : "Process",
       "undefined" : "Process"
     },
-    "subClasses" : [ "19", "16" ],
+    "subClasses" : [ "30", "26" ],
     "comment" : {
       "en" : "A process is an action that changes either the product or the production system state."
     },
-    "id" : "17"
+    "id" : "27"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#DivergingProcess",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -492,8 +478,8 @@
     "comment" : {
       "en" : "A production process where the amount of input-workpieces is smaller than amount of output-workpieces  "
     },
-    "id" : "57",
-    "superClasses" : [ "19" ]
+    "id" : "56",
+    "superClasses" : [ "30" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#VirginMaterial",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -502,7 +488,7 @@
       "IRI-based" : "VirginMaterial",
       "undefined" : "Virgin Material"
     },
-    "id" : "54"
+    "id" : "53"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#UnitPreservingProcess",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -514,8 +500,8 @@
     "comment" : {
       "en" : "A production process where the amount of input-workpieces equals the amount of output-workpieces"
     },
-    "id" : "58",
-    "superClasses" : [ "19" ]
+    "id" : "57",
+    "superClasses" : [ "30" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#ProductType",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -527,7 +513,7 @@
     "comment" : {
       "en" : "TBD."
     },
-    "id" : "24"
+    "id" : "22"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#TaskType",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -539,7 +525,7 @@
     "comment" : {
       "en" : "A task type acts as a blueprint for tasks."
     },
-    "id" : "49"
+    "id" : "47"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#Capability",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -548,7 +534,7 @@
       "IRI-based" : "Capability",
       "undefined" : "Capability"
     },
-    "subClasses" : [ "1", "11", "65" ],
+    "subClasses" : [ "11", "15", "1" ],
     "comment" : {
       "en" : "An ability or capacity of a resource that enables it to perform certain processes."
     },
@@ -560,6 +546,9 @@
     "label" : {
       "IRI-based" : "ProductGeneration",
       "undefined" : "Product Generation"
+    },
+    "comment" : {
+      "en" : "TBD"
     },
     "id" : "91"
   }, {
@@ -573,8 +562,8 @@
     "comment" : {
       "en" : "A production process where the amount of input-workpieces is larger that the amount of output-workpieces  "
     },
-    "id" : "83",
-    "superClasses" : [ "19" ]
+    "id" : "81",
+    "superClasses" : [ "30" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#ProductionProcess",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -583,12 +572,12 @@
       "IRI-based" : "ProductionProcess",
       "undefined" : "Production Process"
     },
-    "subClasses" : [ "57", "83", "58" ],
+    "subClasses" : [ "56", "81", "57" ],
     "comment" : {
       "en" : "A process that involves a workpiece"
     },
-    "id" : "19",
-    "superClasses" : [ "17" ]
+    "id" : "30",
+    "superClasses" : [ "27" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#Workpiece",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -597,11 +586,11 @@
       "IRI-based" : "Workpiece",
       "undefined" : "Workpiece"
     },
-    "subClasses" : [ "38", "39" ],
+    "subClasses" : [ "36", "37" ],
     "comment" : {
       "en" : "A production item that are or were being processed or stored."
     },
-    "id" : "41"
+    "id" : "39"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#Assembly",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -613,8 +602,8 @@
     "comment" : {
       "en" : "A workpiece composed of other workpieces that are structurally combined into a single unit."
     },
-    "id" : "39",
-    "superClasses" : [ "41" ]
+    "id" : "37",
+    "superClasses" : [ "39" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#AssemblyType",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -626,8 +615,8 @@
     "comment" : {
       "en" : "A classification that defines the structure and composition of an assembly independent of individual instances"
     },
-    "id" : "32",
-    "superClasses" : [ "29" ]
+    "id" : "69",
+    "superClasses" : [ "48" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#SupportingProcess",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -639,20 +628,8 @@
     "comment" : {
       "en" : "A process which does not directly involve a workpiece."
     },
-    "id" : "16",
-    "superClasses" : [ "17" ]
-  }, {
-    "iri" : "https://w3id.org/circularfactory/Core#PrductGeneration",
-    "baseIri" : "https://w3id.org/circularfactory/Core",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PrductGeneration",
-      "undefined" : "Prduct Generation"
-    },
-    "comment" : {
-      "en" : "TBD"
-    },
-    "id" : "104"
+    "id" : "26",
+    "superClasses" : [ "27" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#EntityType",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -661,10 +638,11 @@
       "IRI-based" : "EntityType",
       "undefined" : "Entity Type"
     },
+    "subClasses" : [ "69", "66" ],
     "comment" : {
       "en" : "TBD"
     },
-    "id" : "107"
+    "id" : "48"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#Product",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -673,11 +651,11 @@
       "IRI-based" : "Product",
       "undefined" : "Product"
     },
-    "subClasses" : [ "30", "71" ],
+    "subClasses" : [ "28", "71" ],
     "comment" : {
       "en" : "TBD."
     },
-    "id" : "23"
+    "id" : "21"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#OrderItem",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -701,7 +679,7 @@
     "comment" : {
       "en" : "A task that is indivisible and cannot be further decomposed into subtasks within the given modeling scope."
     },
-    "id" : "21",
+    "id" : "19",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#FinishedProduct",
@@ -715,7 +693,7 @@
       "en" : "TBD."
     },
     "id" : "71",
-    "superClasses" : [ "23" ]
+    "superClasses" : [ "21" ]
   }, {
     "iri" : "http://www.w3.org/2006/time#Instant",
     "baseIri" : "http://www.w3.org/2006/time",
@@ -740,82 +718,82 @@
     "id" : "12",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "15",
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "18",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "20",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "22",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "25",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "27",
+    "id" : "29",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "31",
+    "id" : "34",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "36",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "40",
+    "id" : "38",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "43",
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
     "type" : "owl:objectProperty"
   }, {
     "id" : "44",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "46",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "47",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "48",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "52",
+    "id" : "51",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "53",
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
     "type" : "owl:disjointWith"
   }, {
     "id" : "55",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "56",
-    "type" : "owl:disjointWith"
+    "id" : "60",
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "61",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "62",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "63",
+    "id" : "62",
     "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "64",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "66",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "67",
+    "id" : "65",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "68",
+    "id" : "67",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "69",
+    "id" : "68",
     "type" : "owl:objectProperty"
   }, {
     "id" : "70",
@@ -848,10 +826,10 @@
     "id" : "80",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "81",
+    "id" : "82",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "82",
+    "id" : "83",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "84",
@@ -911,37 +889,37 @@
     "id" : "103",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "105",
+    "id" : "104",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "106",
+    "id" : "105",
     "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "106",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "107",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "108",
     "type" : "owl:disjointWith"
   }, {
     "id" : "109",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "110",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "111",
     "type" : "owl:someValuesFrom"
   }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "112",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "113",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "114",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "0"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#executedOn",
@@ -978,84 +956,84 @@
     "attributes" : [ "datatype" ],
     "id" : "12"
   }, {
-    "range" : "17",
-    "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "15"
+    "range" : "2",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
   }, {
-    "range" : "17",
-    "domain" : "19",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "18"
+    "range" : "2",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
   }, {
     "range" : "10",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "20"
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasProductType",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "24",
+    "range" : "22",
     "label" : {
       "IRI-based" : "hasProductType",
       "undefined" : "has product type"
     },
-    "domain" : "23",
+    "domain" : "21",
     "attributes" : [ "object" ],
-    "id" : "22"
+    "id" : "20"
   }, {
     "range" : "10",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "27",
     "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "25"
   }, {
-    "range" : "29",
-    "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "27"
-  }, {
-    "range" : "29",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "31"
+    "range" : "27",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
   }, {
     "range" : "10",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "36"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasPossessedWorkpiece",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "42",
+    "range" : "40",
     "label" : {
       "IRI-based" : "hasPossessedWorkpiece",
       "undefined" : "has possessed workpiece"
     },
-    "domain" : "41",
+    "domain" : "39",
     "attributes" : [ "object" ],
-    "id" : "40"
+    "id" : "38"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasOrigin",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "33",
+    "range" : "31",
     "label" : {
       "IRI-based" : "hasOrigin",
       "undefined" : "has origin"
     },
-    "domain" : "37",
+    "domain" : "35",
     "attributes" : [ "object" ],
-    "id" : "43"
+    "id" : "41"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasInputWorkpiece",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "41",
+    "range" : "39",
     "label" : {
       "IRI-based" : "hasInputWorkpiece",
       "undefined" : "has input workpiece"
     },
     "domain" : "10",
     "attributes" : [ "object" ],
-    "id" : "44"
+    "id" : "42"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasPlannedInterval",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -1066,29 +1044,29 @@
     },
     "domain" : "10",
     "attributes" : [ "object" ],
-    "id" : "46"
+    "id" : "44"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasPossessionInterval",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "42",
+    "range" : "40",
     "label" : {
       "IRI-based" : "hasPossessionInterval",
       "undefined" : "has possession interval"
     },
     "domain" : "4",
     "attributes" : [ "object" ],
-    "id" : "47"
+    "id" : "45"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasInputEntityType",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "29",
+    "range" : "48",
     "label" : {
       "IRI-based" : "hasInputEntityType",
       "undefined" : "has input entity type"
     },
-    "domain" : "49",
+    "domain" : "47",
     "attributes" : [ "object" ],
-    "id" : "48"
+    "id" : "46"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasLocation",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -1099,22 +1077,22 @@
     },
     "domain" : "5",
     "attributes" : [ "object", "someValues" ],
+    "id" : "51"
+  }, {
+    "range" : "26",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "52"
   }, {
-    "range" : "16",
-    "domain" : "19",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "53"
-  }, {
-    "range" : "41",
+    "range" : "39",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "55"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
   }, {
-    "range" : "58",
-    "domain" : "57",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "56"
+    "range" : "57",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasOrderItem",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -1123,20 +1101,20 @@
       "IRI-based" : "hasOrderItem",
       "undefined" : "has order item"
     },
-    "domain" : "59",
+    "domain" : "58",
     "attributes" : [ "object", "someValues" ],
-    "id" : "61"
+    "id" : "60"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/name",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "35",
+    "range" : "33",
     "label" : {
       "IRI-based" : "name",
       "undefined" : "name"
     },
-    "domain" : "51",
+    "domain" : "50",
     "attributes" : [ "external", "datatype" ],
-    "id" : "62"
+    "id" : "61"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#executedOn",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -1147,7 +1125,7 @@
     },
     "domain" : "7",
     "attributes" : [ "object", "someValues" ],
-    "id" : "63"
+    "id" : "62"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasExecutionInterval",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -1158,7 +1136,7 @@
     },
     "domain" : "7",
     "attributes" : [ "object" ],
-    "id" : "64"
+    "id" : "63"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasReferenceTask",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -1169,19 +1147,19 @@
     },
     "domain" : "10",
     "attributes" : [ "object" ],
-    "id" : "66"
+    "id" : "64"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#isActive",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "50",
+    "range" : "49",
     "label" : {
       "IRI-based" : "isActive",
       "undefined" : "is active"
     },
     "cardinality" : "1",
-    "domain" : "41",
+    "domain" : "39",
     "attributes" : [ "datatype" ],
-    "id" : "67"
+    "id" : "65"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasLocation",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -1192,27 +1170,27 @@
     },
     "domain" : "5",
     "attributes" : [ "object" ],
-    "id" : "68"
+    "id" : "67"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasAssemblyType",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "32",
+    "range" : "69",
     "label" : {
       "IRI-based" : "hasAssemblyType",
       "undefined" : "has assembly type"
     },
-    "domain" : "39",
+    "domain" : "37",
     "attributes" : [ "object" ],
-    "id" : "69"
+    "id" : "68"
   }, {
-    "range" : "23",
+    "range" : "21",
     "domain" : "71",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "70"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#implementsProcess",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "17",
+    "range" : "27",
     "label" : {
       "IRI-based" : "implementsProcess",
       "undefined" : "implements process"
@@ -1221,82 +1199,82 @@
     "attributes" : [ "object" ],
     "id" : "72"
   }, {
-    "range" : "41",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "48",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "73"
   }, {
-    "range" : "19",
-    "domain" : "58",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "39",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "74"
   }, {
-    "range" : "23",
-    "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "21",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "75"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#containsWorkpiece",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "41",
+    "range" : "39",
     "label" : {
       "IRI-based" : "containsWorkpiece",
       "undefined" : "contains workpiece"
     },
-    "domain" : "39",
+    "domain" : "37",
     "attributes" : [ "object", "transitive" ],
     "id" : "76"
   }, {
-    "range" : "41",
-    "domain" : "39",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "48",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "77"
-  }, {
-    "iri" : "https://w3id.org/circularfactory/Core#hasOutputWorkpiece",
-    "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "41",
-    "label" : {
-      "IRI-based" : "hasOutputWorkpiece",
-      "undefined" : "has output workpiece"
-    },
-    "domain" : "10",
-    "attributes" : [ "object" ],
-    "id" : "78"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasTaskType",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "49",
+    "range" : "47",
     "label" : {
       "IRI-based" : "hasTaskType",
       "undefined" : "has task type"
     },
     "domain" : "10",
     "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#hasOutputWorkpiece",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "hasOutputWorkpiece",
+      "undefined" : "has output workpiece"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
     "id" : "79"
   }, {
-    "range" : "2",
-    "domain" : "65",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "30",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "80"
   }, {
-    "range" : "2",
-    "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "81"
-  }, {
-    "range" : "19",
-    "domain" : "83",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "30",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "82"
   }, {
-    "range" : "19",
+    "range" : "39",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "30",
     "domain" : "57",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "84"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasPossessor",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "42",
+    "range" : "40",
     "label" : {
       "IRI-based" : "hasPossessor",
       "undefined" : "has possessor"
@@ -1312,29 +1290,29 @@
       "IRI-based" : "hasSubTask",
       "undefined" : "has sub task"
     },
-    "domain" : "26",
+    "domain" : "24",
     "attributes" : [ "object", "transitive" ],
     "id" : "86"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasOutputEntityType",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "29",
+    "range" : "48",
     "label" : {
       "IRI-based" : "hasOutputEntityType",
       "undefined" : "has output entity type"
     },
-    "domain" : "49",
+    "domain" : "47",
     "attributes" : [ "object" ],
     "id" : "87"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasQualityState",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "45",
+    "range" : "43",
     "label" : {
       "IRI-based" : "hasQualityState",
       "undefined" : "has quality state"
     },
-    "domain" : "41",
+    "domain" : "39",
     "attributes" : [ "object" ],
     "id" : "88"
   }, {
@@ -1345,7 +1323,7 @@
       "IRI-based" : "hasOrderItem",
       "undefined" : "has order item"
     },
-    "domain" : "59",
+    "domain" : "58",
     "attributes" : [ "object" ],
     "id" : "89"
   }, {
@@ -1367,7 +1345,7 @@
       "IRI-based" : "hasProductGeneration",
       "undefined" : "has product generation"
     },
-    "domain" : "24",
+    "domain" : "22",
     "attributes" : [ "object" ],
     "id" : "92"
   }, {
@@ -1378,43 +1356,54 @@
       "IRI-based" : "hasEvaluationTime",
       "undefined" : "has evaluation time"
     },
-    "domain" : "45",
+    "domain" : "43",
     "attributes" : [ "object" ],
     "id" : "93"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#fulfillsOrder",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "59",
+    "range" : "58",
     "label" : {
       "IRI-based" : "fulfillsOrder",
       "undefined" : "fulfills order"
     },
-    "domain" : "23",
+    "domain" : "21",
     "attributes" : [ "object" ],
     "id" : "94"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#isContainedIn",
     "inverse" : "76",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "39",
+    "range" : "37",
     "label" : {
       "IRI-based" : "isContainedIn",
       "undefined" : "is contained in"
     },
-    "domain" : "41",
+    "domain" : "39",
     "attributes" : [ "object" ],
     "id" : "95"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasComponentType",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "28",
+    "range" : "66",
     "label" : {
       "IRI-based" : "hasComponentType",
       "undefined" : "has component type"
     },
-    "domain" : "38",
+    "domain" : "36",
     "attributes" : [ "object" ],
     "id" : "96"
+  }, {
+    "iri" : "https://w3id.org/circularfactory/Core#enablesProcess",
+    "baseIri" : "https://w3id.org/circularfactory/Core",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "enablesProcess",
+      "undefined" : "enables process"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "97"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasCapability",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -1425,32 +1414,21 @@
     },
     "domain" : "5",
     "attributes" : [ "object" ],
-    "id" : "97"
-  }, {
-    "iri" : "https://w3id.org/circularfactory/Core#enablesProcess",
-    "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "17",
-    "label" : {
-      "IRI-based" : "enablesProcess",
-      "undefined" : "enables process"
-    },
-    "domain" : "2",
-    "attributes" : [ "object" ],
     "id" : "98"
   }, {
-    "range" : "28",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "66",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "99"
   }, {
-    "range" : "26",
-    "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "24",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "100"
   }, {
-    "range" : "11",
-    "domain" : "65",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "15",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "101"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#implementsCapability",
@@ -1464,15 +1442,15 @@
     "attributes" : [ "object" ],
     "id" : "102"
   }, {
-    "range" : "1",
-    "domain" : "65",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "11",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "103"
   }, {
-    "range" : "1",
-    "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "105"
+    "range" : "11",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasSubTask",
     "baseIri" : "https://w3id.org/circularfactory/Core",
@@ -1481,68 +1459,68 @@
       "IRI-based" : "hasSubTask",
       "undefined" : "has sub task"
     },
-    "domain" : "26",
+    "domain" : "24",
     "attributes" : [ "object", "transitive", "someValues" ],
+    "id" : "105"
+  }, {
+    "range" : "56",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "106"
   }, {
     "range" : "57",
-    "domain" : "83",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "36",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "108"
-  }, {
-    "range" : "58",
-    "domain" : "83",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "109"
-  }, {
-    "range" : "38",
-    "domain" : "39",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "110"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#containsWorkpiece",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "41",
+    "range" : "39",
     "label" : {
       "IRI-based" : "containsWorkpiece",
       "undefined" : "contains workpiece"
     },
-    "domain" : "39",
+    "domain" : "37",
     "attributes" : [ "object", "transitive", "someValues" ],
-    "id" : "111"
+    "id" : "109"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasOrderItemProductType",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "24",
+    "range" : "22",
     "label" : {
       "IRI-based" : "hasOrderItemProductType",
       "undefined" : "has order item product type"
     },
     "domain" : "13",
     "attributes" : [ "object" ],
-    "id" : "112"
+    "id" : "110"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#hasFinalWorkpiece",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "41",
+    "range" : "39",
     "label" : {
       "IRI-based" : "hasFinalWorkpiece",
       "undefined" : "has final workpiece"
     },
     "domain" : "71",
     "attributes" : [ "object" ],
-    "id" : "113"
+    "id" : "111"
   }, {
     "iri" : "https://w3id.org/circularfactory/Core#isSubTaskOf",
     "inverse" : "86",
     "baseIri" : "https://w3id.org/circularfactory/Core",
-    "range" : "26",
+    "range" : "24",
     "label" : {
       "IRI-based" : "isSubTaskOf",
       "undefined" : "is sub task of"
     },
     "domain" : "10",
     "attributes" : [ "object" ],
-    "id" : "114"
+    "id" : "112"
   } ]
 }

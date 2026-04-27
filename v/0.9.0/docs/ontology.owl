@@ -263,7 +263,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasInputEntityType">
         <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#TaskType"/>
-        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#EntitiyType"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#EntityType"/>
         <rdfs:label>has input entity type</rdfs:label>
     </owl:ObjectProperty>
     
@@ -349,7 +349,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasOutputEntityType">
         <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#TaskType"/>
-        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#EntitiyType"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#EntityType"/>
         <rdfs:label>has output entity type</rdfs:label>
     </owl:ObjectProperty>
     
@@ -649,7 +649,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/circularfactory/Core#AssemblyType">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#EntitiyType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#EntityType"/>
         <owl:disjointWith rdf:resource="https://w3id.org/circularfactory/Core#ComponentType"/>
         <rdfs:comment xml:lang="en">A classification that defines the structure and composition of an assembly independent of individual instances</rdfs:comment>
         <rdfs:label>Assembly Type</rdfs:label>
@@ -733,7 +733,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/circularfactory/Core#ComponentType">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#EntitiyType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#EntityType"/>
         <rdfs:comment xml:lang="en">A classification that defines the design or specification of a component independent of individual instances</rdfs:comment>
         <rdfs:label>Component Type</rdfs:label>
     </owl:Class>
@@ -785,15 +785,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#ProductionProcess"/>
         <rdfs:comment xml:lang="en">A production process where the amount of input-workpieces is smaller than amount of output-workpieces  </rdfs:comment>
         <rdfs:label>Diverging Process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/circularfactory/Core#EntitiyType -->
-
-
-    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#EntitiyType">
-        <rdfs:label>Entitiy Type</rdfs:label>
     </owl:Class>
     
 
@@ -946,16 +937,6 @@
     
 
 
-    <!-- https://w3id.org/circularfactory/Core#PrductGeneration -->
-
-
-    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#PrductGeneration">
-        <rdfs:comment xml:lang="en">TBD</rdfs:comment>
-        <rdfs:label>Prduct Generation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/circularfactory/Core#Process -->
 
 
@@ -987,6 +968,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/circularfactory/Core#ProductGeneration">
+        <rdfs:comment xml:lang="en">TBD</rdfs:comment>
         <rdfs:label>Product Generation</rdfs:label>
     </owl:Class>
     
@@ -1169,6 +1151,7 @@
     <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-3704-9567">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <foaf:name>Jan-Felix Klein</foaf:name>
+        <rdfs:label>Jan-Felix Klein</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1179,6 +1162,7 @@
     <owl:NamedIndividual rdf:about="https://orcid.org/0009-0008-1170-4122">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <foaf:name>Finn Bail</foaf:name>
+        <rdfs:label>Finn Bail</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1194,6 +1178,9 @@
 
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
         <rdfs:label>comment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
     </rdf:Description>
     
 

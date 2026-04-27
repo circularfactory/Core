@@ -138,7 +138,7 @@
 # https://w3id.org/circularfactory/Core#hasInputEntityType
 <https://w3id.org/circularfactory/Core#hasInputEntityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/circularfactory/Core#hasInputEntityType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#TaskType> .
-<https://w3id.org/circularfactory/Core#hasInputEntityType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#EntitiyType> .
+<https://w3id.org/circularfactory/Core#hasInputEntityType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#EntityType> .
 <https://w3id.org/circularfactory/Core#hasInputEntityType> <http://www.w3.org/2000/01/rdf-schema#label> "has input entity type" .
 # 
 # https://w3id.org/circularfactory/Core#hasInputWorkpiece
@@ -190,7 +190,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://w3id.org/circularfactory/Core#hasOutputEntityType
 <https://w3id.org/circularfactory/Core#hasOutputEntityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/circularfactory/Core#hasOutputEntityType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/circularfactory/Core#TaskType> .
-<https://w3id.org/circularfactory/Core#hasOutputEntityType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#EntitiyType> .
+<https://w3id.org/circularfactory/Core#hasOutputEntityType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/circularfactory/Core#EntityType> .
 <https://w3id.org/circularfactory/Core#hasOutputEntityType> <http://www.w3.org/2000/01/rdf-schema#label> "has output entity type" .
 # 
 # https://w3id.org/circularfactory/Core#hasOutputWorkpiece
@@ -358,7 +358,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/circularfactory/Core#AssemblyType
 <https://w3id.org/circularfactory/Core#AssemblyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/circularfactory/Core#AssemblyType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#EntitiyType> .
+<https://w3id.org/circularfactory/Core#AssemblyType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#EntityType> .
 <https://w3id.org/circularfactory/Core#AssemblyType> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/circularfactory/Core#ComponentType> .
 <https://w3id.org/circularfactory/Core#AssemblyType> <http://www.w3.org/2000/01/rdf-schema#comment> "A classification that defines the structure and composition of an assembly independent of individual instances"@en .
 <https://w3id.org/circularfactory/Core#AssemblyType> <http://www.w3.org/2000/01/rdf-schema#label> "Assembly Type" .
@@ -412,7 +412,7 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/circularfactory/Core#ComponentType
 <https://w3id.org/circularfactory/Core#ComponentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/circularfactory/Core#ComponentType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#EntitiyType> .
+<https://w3id.org/circularfactory/Core#ComponentType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#EntityType> .
 <https://w3id.org/circularfactory/Core#ComponentType> <http://www.w3.org/2000/01/rdf-schema#comment> "A classification that defines the design or specification of a component independent of individual instances"@en .
 <https://w3id.org/circularfactory/Core#ComponentType> <http://www.w3.org/2000/01/rdf-schema#label> "Component Type" .
 # 
@@ -442,10 +442,6 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/circularfactory/Core#DivergingProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/circularfactory/Core#ProductionProcess> .
 <https://w3id.org/circularfactory/Core#DivergingProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "A production process where the amount of input-workpieces is smaller than amount of output-workpieces  "@en .
 <https://w3id.org/circularfactory/Core#DivergingProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Diverging Process" .
-# 
-# https://w3id.org/circularfactory/Core#EntitiyType
-<https://w3id.org/circularfactory/Core#EntitiyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/circularfactory/Core#EntitiyType> <http://www.w3.org/2000/01/rdf-schema#label> "Entitiy Type" .
 # 
 # https://w3id.org/circularfactory/Core#EntityType
 <https://w3id.org/circularfactory/Core#EntityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -534,11 +530,6 @@ _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/circularfactory/Core#PossessionState> <http://www.w3.org/2000/01/rdf-schema#comment> "A contextual, time-bound relationship between a resource and a workpiece, often mediated by an operation."@en .
 <https://w3id.org/circularfactory/Core#PossessionState> <http://www.w3.org/2000/01/rdf-schema#label> "Possession State" .
 # 
-# https://w3id.org/circularfactory/Core#PrductGeneration
-<https://w3id.org/circularfactory/Core#PrductGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/circularfactory/Core#PrductGeneration> <http://www.w3.org/2000/01/rdf-schema#comment> "TBD"@en .
-<https://w3id.org/circularfactory/Core#PrductGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "Prduct Generation" .
-# 
 # https://w3id.org/circularfactory/Core#Process
 <https://w3id.org/circularfactory/Core#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/circularfactory/Core#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "A process is an action that changes either the product or the production system state."@en .
@@ -556,6 +547,7 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/circularfactory/Core#ProductGeneration
 <https://w3id.org/circularfactory/Core#ProductGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/circularfactory/Core#ProductGeneration> <http://www.w3.org/2000/01/rdf-schema#comment> "TBD"@en .
 <https://w3id.org/circularfactory/Core#ProductGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "Product Generation" .
 # 
 # https://w3id.org/circularfactory/Core#ProductType
@@ -664,11 +656,13 @@ _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://orcid.org/0000-0002-3704-9567> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://orcid.org/0000-0002-3704-9567> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
 <https://orcid.org/0000-0002-3704-9567> <http://xmlns.com/foaf/0.1/name> "Jan-Felix Klein" .
+<https://orcid.org/0000-0002-3704-9567> <http://www.w3.org/2000/01/rdf-schema#label> "Jan-Felix Klein" .
 # 
 # https://orcid.org/0009-0008-1170-4122
 <https://orcid.org/0009-0008-1170-4122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://orcid.org/0009-0008-1170-4122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
 <https://orcid.org/0009-0008-1170-4122> <http://xmlns.com/foaf/0.1/name> "Finn Bail" .
+<https://orcid.org/0009-0008-1170-4122> <http://www.w3.org/2000/01/rdf-schema#label> "Finn Bail" .
 # 
 # 
 # 
@@ -680,6 +674,8 @@ _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # 
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#label> "comment" .
+# 
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#label> "label" .
 # 
 # 
 # 

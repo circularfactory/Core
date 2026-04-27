@@ -360,7 +360,10 @@
   } ]
 }, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "label"
+  } ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
@@ -403,6 +406,9 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Jan-Felix Klein"
+  } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Jan-Felix Klein"
   } ]
@@ -411,6 +417,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Finn Bail"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Finn Bail"
@@ -488,7 +497,7 @@
     "@value" : "Assembly Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/circularfactory/Core#EntitiyType"
+    "@id" : "https://w3id.org/circularfactory/Core#EntityType"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/circularfactory/Core#ComponentType"
@@ -563,7 +572,7 @@
     "@value" : "Component Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/circularfactory/Core#EntitiyType"
+    "@id" : "https://w3id.org/circularfactory/Core#EntityType"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/Core#CompositeTask",
@@ -614,12 +623,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/circularfactory/Core#ProductionProcess"
-  } ]
-}, {
-  "@id" : "https://w3id.org/circularfactory/Core#EntitiyType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Entitiy Type"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/Core#EntityType",
@@ -743,16 +746,6 @@
     "@value" : "Possession State"
   } ]
 }, {
-  "@id" : "https://w3id.org/circularfactory/Core#PrductGeneration",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "TBD"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Prduct Generation"
-  } ]
-}, {
   "@id" : "https://w3id.org/circularfactory/Core#Process",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -778,6 +771,10 @@
 }, {
   "@id" : "https://w3id.org/circularfactory/Core#ProductGeneration",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "TBD"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Product Generation"
   } ]
@@ -1055,7 +1052,7 @@
     "@value" : "has input entity type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/circularfactory/Core#EntitiyType"
+    "@id" : "https://w3id.org/circularfactory/Core#EntityType"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/Core#hasInputWorkpiece",
@@ -1143,7 +1140,7 @@
     "@value" : "has output entity type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/circularfactory/Core#EntitiyType"
+    "@id" : "https://w3id.org/circularfactory/Core#EntityType"
   } ]
 }, {
   "@id" : "https://w3id.org/circularfactory/Core#hasOutputWorkpiece",
