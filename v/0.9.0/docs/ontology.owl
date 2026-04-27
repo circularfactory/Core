@@ -1,0 +1,1232 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/circularfactory/Core#"
+     xml:base="https://w3id.org/circularfactory/Core"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/circularfactory/Core">
+        <owl:versionIRI rdf:resource="https://w3id.org/circularfactory/Core/0.9.0"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-08-11</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-3704-9567"/>
+        <terms:creator rdf:resource="https://orcid.org/0009-0008-1170-4122"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">The Circular Factory Core Ontology</terms:title>
+        <vann:preferredNamespacePrefix>cfc</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/circularfactory/Core#"/>
+        <rdfs:comment xml:lang="en">The core ontology defines central concepts and relations of a circular factory.</rdfs:comment>
+        <rdfs:label xml:lang="en">Circular Factory Core Ontology</rdfs:label>
+        <owl:versionInfo>0.9.0</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#containsWorkpiece -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#containsWorkpiece">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Assembly"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:label>contains workpiece</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#enablesProcess -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#enablesProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Capability"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Process"/>
+        <rdfs:label>enables process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#executedOn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#executedOn">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Operation"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Resource"/>
+        <rdfs:label>executed on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#fulfillsOrder -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#fulfillsOrder">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Product"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Order"/>
+        <rdfs:label>fulfills order</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasAssemblyType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasAssemblyType">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Assembly"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#AssemblyType"/>
+        <rdfs:label>has assembly type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasCapability -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasCapability">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Resource"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Capability"/>
+        <rdfs:label>has capability</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasComponentType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasComponentType">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ComponentType"/>
+        <rdfs:label>has component type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasEvaluationTime -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasEvaluationTime">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#QualityState"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:label>has evaluation time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasExecutionInterval -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasExecutionInterval">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Operation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:label>has execution interval</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasFinalWorkpiece -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasFinalWorkpiece">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#FinishedProduct"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:label>has final workpiece</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasInputEntityType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasInputEntityType">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#TaskType"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#EntitiyType"/>
+        <rdfs:label>has input entity type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasInputWorkpiece -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasInputWorkpiece">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Task"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:label>has input workpiece</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasLocation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasLocation">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Resource"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Location"/>
+        <rdfs:label>has location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasObservationTime -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasObservationTime">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:label>has observation time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasOrderItem -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasOrderItem">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Order"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#OrderItem"/>
+        <rdfs:label>has order item</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasOrderItemProductType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasOrderItemProductType">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#OrderItem"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ProductType"/>
+        <rdfs:label>has order item product type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasOrigin -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasOrigin">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Assembly"/>
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Core"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/circularfactory/Core#Core"/>
+                    <rdf:Description rdf:about="https://w3id.org/circularfactory/Core#VirginMaterial"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>has origin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasOutputEntityType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasOutputEntityType">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#TaskType"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#EntitiyType"/>
+        <rdfs:label>has output entity type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasOutputWorkpiece -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasOutputWorkpiece">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Task"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:label>has output workpiece</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasPlannedInterval -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasPlannedInterval">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Task"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:label>has planned interval</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasPossessedWorkpiece -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasPossessedWorkpiece">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#PossessionState"/>
+        <rdfs:label>has possessed workpiece</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasPossessionInterval -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasPossessionInterval">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#PossessionState"/>
+        <rdfs:label>has possession interval</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasPossessor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasPossessor">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Resource"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#PossessionState"/>
+        <rdfs:label>has possessor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasPreviousProductGeneration -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasPreviousProductGeneration">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#ProductGeneration"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ProductGeneration"/>
+        <rdfs:label>has previous product generation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasProductGeneration -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasProductGeneration">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#ProductType"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ProductGeneration"/>
+        <rdfs:label>has product generation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasProductType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasProductType">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Product"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#ProductType"/>
+        <rdfs:label>has product type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasQualityState -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasQualityState">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#QualityState"/>
+        <rdfs:label>has quality state</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasReferenceTask -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasReferenceTask">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Task"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Task"/>
+        <rdfs:label>has reference task</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasSubTask -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasSubTask">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#CompositeTask"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Task"/>
+        <rdfs:label>has sub task</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#hasTaskType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#hasTaskType">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Task"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#TaskType"/>
+        <rdfs:label>has task type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#implementsCapability -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#implementsCapability">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Operation"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Capability"/>
+        <rdfs:label>implements capability</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#implementsProcess -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#implementsProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Task"/>
+        <rdfs:range rdf:resource="https://w3id.org/circularfactory/Core#Process"/>
+        <rdfs:label>implements process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#isContainedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#isContainedIn">
+        <owl:inverseOf rdf:resource="https://w3id.org/circularfactory/Core#containsWorkpiece"/>
+        <rdfs:label>is contained in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#isSubTaskOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/circularfactory/Core#isSubTaskOf">
+        <owl:inverseOf rdf:resource="https://w3id.org/circularfactory/Core#hasSubTask"/>
+        <rdfs:label>is sub task of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#amount -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/circularfactory/Core#amount">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#OrderItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:label>amount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#isActive -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/circularfactory/Core#isActive">
+        <rdfs:domain rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>is active</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
+        <rdfs:label>Instant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasPossessionInterval"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/circularfactory/Core#PossessionState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Assembly -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Assembly">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#containsWorkpiece"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasAssemblyType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/circularfactory/Core#AssemblyType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/circularfactory/Core#Component"/>
+        <rdfs:comment xml:lang="en">A workpiece composed of other workpieces that are structurally combined into a single unit.</rdfs:comment>
+        <rdfs:label>Assembly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#AssemblyType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#AssemblyType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#EntitiyType"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/circularfactory/Core#ComponentType"/>
+        <rdfs:comment xml:lang="en">A classification that defines the structure and composition of an assembly independent of individual instances</rdfs:comment>
+        <rdfs:label>Assembly Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#AtomicTask -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#AtomicTask">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Task"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/circularfactory/Core#CompositeTask"/>
+        <rdfs:comment xml:lang="en">A task that is indivisible and cannot be further decomposed into subtasks within the given modeling scope.</rdfs:comment>
+        <rdfs:label>Atomic Task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Capability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Capability">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#enablesProcess"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/circularfactory/Core#Process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An ability or capacity of a resource that enables it to perform certain processes.</rdfs:comment>
+        <rdfs:label>Capability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#ChangeabilityCapability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#ChangeabilityCapability">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Capability"/>
+        <rdfs:comment xml:lang="en">A capability that can be equipped with high effort in time or cost.</rdfs:comment>
+        <rdfs:label>Changeability Capability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Component -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Component">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasComponentType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/circularfactory/Core#ComponentType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasOrigin"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/circularfactory/Core#Core"/>
+                            <rdf:Description rdf:about="https://w3id.org/circularfactory/Core#VirginMaterial"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A workpiece that is indivisible and cannot be further decomposed into components within the given modeling scope.</rdfs:comment>
+        <rdfs:label>Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#ComponentType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#ComponentType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#EntitiyType"/>
+        <rdfs:comment xml:lang="en">A classification that defines the design or specification of a component independent of individual instances</rdfs:comment>
+        <rdfs:label>Component Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#CompositeTask -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#CompositeTask">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Task"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasSubTask"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/circularfactory/Core#Task"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A task that can be decomposed into multiple subtasks.</rdfs:comment>
+        <rdfs:label>Composite Task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#ConvergingProcess -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#ConvergingProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#ProductionProcess"/>
+        <rdfs:comment xml:lang="en">A production process where the amount of input-workpieces is larger that the amount of output-workpieces  </rdfs:comment>
+        <rdfs:label>Converging Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Core -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Core">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Product"/>
+        <rdfs:label>Core</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#DivergingProcess -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#DivergingProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#ProductionProcess"/>
+        <rdfs:comment xml:lang="en">A production process where the amount of input-workpieces is smaller than amount of output-workpieces  </rdfs:comment>
+        <rdfs:label>Diverging Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#EntitiyType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#EntitiyType">
+        <rdfs:label>Entitiy Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#EntityType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#EntityType">
+        <rdfs:comment xml:lang="en">TBD</rdfs:comment>
+        <rdfs:label>Entity Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#EquippedCapability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#EquippedCapability">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Capability"/>
+        <rdfs:comment xml:lang="en">A capability that is currently available and which is realized through the physical or technical configuration of a resource.</rdfs:comment>
+        <rdfs:label>Equipped Capability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#FinishedProduct -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#FinishedProduct">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Product"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasFinalWorkpiece"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">TBD.</rdfs:comment>
+        <rdfs:label>Finished Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#FlexibilityCapability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#FlexibilityCapability">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Capability"/>
+        <rdfs:comment xml:lang="en">A capability that can be equipped with little effort in time or cost.</rdfs:comment>
+        <rdfs:label>Flexibility Capability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Location -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Location">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasObservationTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#Instant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A spatial region or place where resources or production items are situated.</rdfs:comment>
+        <rdfs:label>Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Operation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Operation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Task"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#executedOn"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/circularfactory/Core#Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasExecutionInterval"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#Interval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#implementsCapability"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/circularfactory/Core#Capability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An executable form of a task which has been assigned to a concrete resource.</rdfs:comment>
+        <rdfs:label>Operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Order -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Order">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasOrderItem"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/circularfactory/Core#OrderItem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A specification of requested production activities, defining what products or items should be produced and under which conditions.</rdfs:comment>
+        <rdfs:label>Order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#OrderItem -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#OrderItem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasOrderItemProductType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/circularfactory/Core#ProductType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#amount"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An individual item within an order that specifies a particular product variant, quantity, or requirements.</rdfs:comment>
+        <rdfs:label>Order Item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#PossessionState -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#PossessionState">
+        <rdfs:comment xml:lang="en">A contextual, time-bound relationship between a resource and a workpiece, often mediated by an operation.</rdfs:comment>
+        <rdfs:label>Possession State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#PrductGeneration -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#PrductGeneration">
+        <rdfs:comment xml:lang="en">TBD</rdfs:comment>
+        <rdfs:label>Prduct Generation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Process -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Process">
+        <rdfs:comment xml:lang="en">A process is an action that changes either the product or the production system state.</rdfs:comment>
+        <rdfs:label>Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Product -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Product">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasProductType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/circularfactory/Core#ProductType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">TBD.</rdfs:comment>
+        <rdfs:label>Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#ProductGeneration -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#ProductGeneration">
+        <rdfs:label>Product Generation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#ProductType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#ProductType">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasProductGeneration"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/circularfactory/Core#ProductGeneration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">TBD.</rdfs:comment>
+        <rdfs:label>Product Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#ProductionProcess -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#ProductionProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Process"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/circularfactory/Core#SupportingProcess"/>
+        <rdfs:comment xml:lang="en">A process that involves a workpiece</rdfs:comment>
+        <rdfs:label>Production Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#QualityState -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#QualityState">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasEvaluationTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#Instant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The quality state a workpiece, evaluated at a given time</rdfs:comment>
+        <rdfs:label>Quality State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Resource -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Resource">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/circularfactory/Core#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasPossessor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/circularfactory/Core#PossessionState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/circularfactory/Core#Workpiece"/>
+        <rdfs:comment xml:lang="en">An entity such as a machine, tool, human, or system that can perform or support processes.</rdfs:comment>
+        <rdfs:label>Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#SupportingProcess -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#SupportingProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#Process"/>
+        <rdfs:comment xml:lang="en">A process which does not directly involve a workpiece.</rdfs:comment>
+        <rdfs:label>Supporting Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Task -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Task">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasPlannedInterval"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#Interval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#implementsProcess"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/circularfactory/Core#Process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An abstract unit of work that implements a specific process.</rdfs:comment>
+        <rdfs:label>Task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#TaskType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#TaskType">
+        <rdfs:comment xml:lang="en">A task type acts as a blueprint for tasks.</rdfs:comment>
+        <rdfs:label>Task Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#UnitPreservingProcess -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#UnitPreservingProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/circularfactory/Core#ProductionProcess"/>
+        <rdfs:comment xml:lang="en">A production process where the amount of input-workpieces equals the amount of output-workpieces</rdfs:comment>
+        <rdfs:label>Unit Preserving Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#VirginMaterial -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#VirginMaterial">
+        <rdfs:label>Virgin Material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/circularfactory/Core#Workpiece -->
+
+
+    <owl:Class rdf:about="https://w3id.org/circularfactory/Core#Workpiece">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#hasPossessedWorkpiece"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/circularfactory/Core#PossessionState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/circularfactory/Core#isActive"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A production item that are or were being processed or stored.</rdfs:comment>
+        <rdfs:label>Workpiece</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://orcid.org/0000-0002-3704-9567 -->
+
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-3704-9567">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:name>Jan-Felix Klein</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0009-0008-1170-4122 -->
+
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0009-0008-1170-4122">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:name>Finn Bail</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:label>comment</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/circularfactory/Core#ChangeabilityCapability"/>
+            <rdf:Description rdf:about="https://w3id.org/circularfactory/Core#EquippedCapability"/>
+            <rdf:Description rdf:about="https://w3id.org/circularfactory/Core#FlexibilityCapability"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/circularfactory/Core#ConvergingProcess"/>
+            <rdf:Description rdf:about="https://w3id.org/circularfactory/Core#DivergingProcess"/>
+            <rdf:Description rdf:about="https://w3id.org/circularfactory/Core#UnitPreservingProcess"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
